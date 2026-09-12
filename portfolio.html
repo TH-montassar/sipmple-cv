@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Montassar Themri — Portfolio</title>
+	<meta name="description" content="Portfolio de Montassar Themri — Développeur logiciel embarqué junior chez Sagemcom : C embarqué, réseaux, Wi-Fi EasyMesh, Python/FastAPI et React." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+	<nav class="nav">
+		<div class="wrap nav-inner">
+			<a class="brand" href="portfolio.html">Montassar Themri</a>
+			<ul class="nav-links">
+				<li><a href="#about">À propos</a></li>
+				<li><a href="#projects">Projets</a></li>
+				<li><a href="#skills">Compétences</a></li>
+				<li><a href="#experience">Parcours</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a class="nav-cta" href="index.html">Voir le CV</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header class="hero">
+		<div class="wrap hero-inner">
+			<div>
+				<span class="eyebrow"><span class="dot"></span> Disponible pour de nouveaux projets</span>
+				<h1>Montassar Themri</h1>
+				<p class="tagline">Développeur logiciel embarqué &amp; réseaux</p>
+				<p class="lead">
+					Ingénieur en génie informatique, 4+ ans chez Sagemcom en alternance. Je développe en C embarqué
+					sur passerelles résidentielles et répéteurs Wi-Fi EasyMesh, et je construis des outils web
+					(Python/FastAPI, React) autour du diagnostic réseau.
+				</p>
+				<div class="hero-actions">
+					<a class="btn btn-primary" href="#projects">Découvrir mes projets</a>
+					<a class="btn" href="Montassar_Themri_CV.pdf" download>Télécharger le CV (PDF)</a>
+					<a class="btn" href="https://github.com/TH-montassar" target="_blank" rel="noopener">GitHub</a>
+				</div>
+			</div>
+			<div class="portrait">
+				<img src="images/montassar.png" alt="Portrait de Montassar Themri" width="520" height="520" />
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="section" id="about">
+			<div class="wrap">
+				<div class="section-head">
+					<h2>À propos</h2>
+					<p class="section-title">Du capteur à l'interface web</p>
+				</div>
+				<div class="about-text">
+					<p>
+						Je travaille au quotidien sur l'ensemble de la pile réseau des passerelles résidentielles&nbsp;:
+						DHCP, DNS, TCP/IP, IPv6, QoS, Wi-Fi 802.11, IEEE 1901 et EasyMesh. Mon terrain de jeu, c'est
+						le C embarqué, Linux, Wireshark et la reproduction de bugs réseau difficiles.
+					</p>
+					<p>
+						En parallèle, je conçois des applications web complètes&nbsp;: mon projet de fin d'études,
+						<em>Dynamic Packet Capture</em>, combine capture réseau automatique, moteur de règles et LLM local
+						derrière une API FastAPI et une interface React. Je suis en veille permanente et je publie
+						régulièrement mes expérimentations sur
+						<a href="https://github.com/TH-montassar" target="_blank" rel="noopener">github.com/TH-montassar</a>.
+					</p>
+				</div>
+				<ul class="stats">
+					<li><strong>4+</strong><span>années chez Sagemcom</span></li>
+					<li><strong>C · Python · Java</strong><span>langages principaux</span></li>
+					<li><strong>Bizerte, TN</strong><span>sur site ou à distance</span></li>
+					<li><strong>40+</strong><span>dépôts publics sur GitHub</span></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section" id="projects">
+			<div class="wrap">
+				<div class="section-head">
+					<h2>Projets</h2>
+					<p class="section-title">Ce que j'ai construit</p>
+					<p class="section-intro">
+						Une sélection de projets professionnels, académiques et personnels, du réseau embarqué
+						au développement web full-stack. La plupart sont publics sur
+						<a href="https://github.com/TH-montassar" target="_blank" rel="noopener">GitHub</a>.
+					</p>
+				</div>
+
+				<div class="filters" role="group" aria-label="Filtrer les projets">
+					<button class="filter is-active" type="button" data-filter="all">Tous</button>
+					<button class="filter" type="button" data-filter="embedded">Embarqué &amp; IoT</button>
+					<button class="filter" type="button" data-filter="web">Web full-stack</button>
+					<button class="filter" type="button" data-filter="mobile">Mobile</button>
+					<button class="filter" type="button" data-filter="desktop">Desktop</button>
+				</div>
+
+				<div class="projects">
+
+					<article class="card" data-cat="embedded">
+						<div class="card-top">
+							<h3>Dynamic Packet Capture</h3>
+							<span class="badge">PFE ingénieur</span>
+						</div>
+						<p>
+							Plateforme de diagnostic réseau assistée par l'IA&nbsp;: déclenchement automatique de captures
+							sur erreur réseau, analyse DHCP / DNS / 802.11 / EasyMesh, moteur de règles et LLM local
+							pour expliquer les anomalies détectées.
+						</p>
+						<ul class="stack">
+							<li>Python</li>
+							<li>FastAPI</li>
+							<li>Celery</li>
+							<li>PostgreSQL</li>
+							<li>Redis</li>
+							<li>Scapy</li>
+							<li>React</li>
+							<li>Docker</li>
+						</ul>
+						<div class="card-links">
+							<span class="card-note">Sagemcom · 2026</span>
+						</div>
+					</article>
+
+					<article class="card" data-cat="embedded">
+						<div class="card-top">
+							<h3>Firmware passerelles &amp; EasyMesh</h3>
+							<span class="badge">Embarqué</span>
+						</div>
+						<p>
+							Développement et maintenance en C embarqué pour passerelles résidentielles et répéteurs
+							Wi-Fi EasyMesh&nbsp;: pile réseau, intégration de fonctionnalités et correction de bugs
+							en équipe agile.
+						</p>
+						<ul class="stack">
+							<li>C</li>
+							<li>Linux</li>
+							<li>TCP/IP · IPv6</li>
+							<li>Wi-Fi 802.11</li>
+							<li>Wireshark</li>
+							<li>Git · Jira</li>
+						</ul>
+						<div class="card-links">
+							<span class="card-note">Sagemcom · 2022 → aujourd'hui</span>
+						</div>
+					</article>
+
+					<article class="card" data-cat="embedded">
+						<div class="card-top">
+							<h3>PDS-32 — Gestion énergétique IoT</h3>
+							<span class="badge">IoT</span>
+						</div>
+						<p>
+							Système IoT complet de gestion de l'énergie autour d'un ESP32&nbsp;: monitoring temps réel,
+							contrôle des actionneurs, graphiques historiques, alertes et automatisation. Firmware C++
+							(PlatformIO, simulable sous Wokwi), communication MQTT et dashboard Flask conteneurisé.
+						</p>
+						<ul class="stack">
+							<li>ESP32</li>
+							<li>C++ · PlatformIO</li>
+							<li>Python · Flask</li>
+							<li>MQTT</li>
+							<li>Docker</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/PDS-32-Energy-Management" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="embedded">
+						<div class="card-top">
+							<h3>Smart Electric Elevator</h3>
+							<span class="badge">IoT · 3D</span>
+						</div>
+						<p>
+							Simulation intelligente d'un ascenseur connecté (ESP32, Arduino, Raspberry Pi). L'interface
+							web restitue l'ascenseur en 3D temps réel et expose un tableau de bord d'état et de
+							métriques pour piloter et observer la cabine.
+						</p>
+						<ul class="stack">
+							<li>TypeScript</li>
+							<li>React 19</li>
+							<li>Three.js · R3F</li>
+							<li>Recharts</li>
+							<li>Tailwind CSS</li>
+							<li>Vite</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/Smart-Electric-Elevator" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="embedded">
+						<div class="card-top">
+							<h3>LString</h3>
+							<span class="badge">Bibliothèque C</span>
+						</div>
+						<p>
+							Bibliothèque C personnelle dédiée à la manipulation de chaînes de caractères et aux
+							utilitaires d'expressions régulières — un terrain d'expérimentation sur la gestion
+							mémoire et les API C propres.
+						</p>
+						<ul class="stack">
+							<li>C</li>
+							<li>Regex</li>
+							<li>Gestion mémoire</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/Lstring" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="desktop">
+						<div class="card-top">
+							<h3>StockMoto</h3>
+							<span class="badge">Desktop</span>
+						</div>
+						<p>
+							Application de bureau de gestion de stock de pièces moto et vélo, livrée en installeur
+							Windows&nbsp;: tableau de bord, catégories et marques, alertes de stock, facturation,
+							export des données et sauvegardes quotidiennes automatiques en local.
+						</p>
+						<ul class="stack">
+							<li>Electron</li>
+							<li>JavaScript</li>
+							<li>electron-builder</li>
+							<li>NSIS · AppImage</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/stockmoto" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="web">
+						<div class="card-top">
+							<h3>Dukkan</h3>
+							<span class="badge">Full-stack</span>
+						</div>
+						<p>
+							Marketplace e-commerce multi-vendeurs&nbsp;: boutiques, panier, commandes, favoris et avis,
+							avec authentification JWT et rôles admin / commerçant / client. Projet de fin d'études
+							de licence, réalisé chez Joodlab.
+						</p>
+						<ul class="stack">
+							<li>MongoDB</li>
+							<li>Express</li>
+							<li>React</li>
+							<li>Redux</li>
+							<li>Node.js</li>
+							<li>Tailwind CSS</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/dukkan-PFE-2022" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="web">
+						<div class="card-top">
+							<h3>GestionConge</h3>
+							<span class="badge">Full-stack</span>
+						</div>
+						<p>
+							Application web de gestion des congés&nbsp;: demandes, profils et validation, avec API
+							Node/Express documentée sous Swagger, authentification par token et front React TypeScript
+							en Redux Toolkit.
+						</p>
+						<ul class="stack">
+							<li>TypeScript</li>
+							<li>React</li>
+							<li>Redux Toolkit</li>
+							<li>Node.js · Express</li>
+							<li>MongoDB</li>
+							<li>JWT · Swagger</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/GestionConge" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="web">
+						<div class="card-top">
+							<h3>Gestion de stock</h3>
+							<span class="badge">Académique</span>
+						</div>
+						<p>
+							Application web de gestion de stock réalisée durant la licence&nbsp;: clients, articles,
+							mouvements d'entrée/sortie et reporting, sur une architecture Java MVC en couches
+							(contrôleurs, services, DAO) construite avec Maven.
+						</p>
+						<ul class="stack">
+							<li>Java</li>
+							<li>Spring</li>
+							<li>Maven</li>
+							<li>MySQL</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/gestion-de-stockv2" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="web">
+						<div class="card-top">
+							<h3>Social App</h3>
+							<span class="badge">Full-stack</span>
+						</div>
+						<p>
+							Réseau social MERN pour discuter et rencontrer de nouvelles personnes&nbsp;: profils,
+							publications et messagerie, avec un back Node/Express et une interface React.
+						</p>
+						<ul class="stack">
+							<li>MongoDB</li>
+							<li>Express</li>
+							<li>React</li>
+							<li>Node.js</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/socialApp-mernStack" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="mobile">
+						<div class="card-top">
+							<h3>Aguide Tour</h3>
+							<span class="badge">Mobile</span>
+						</div>
+						<p>
+							Application Android de guide touristique aidant les visiteurs à découvrir la Tunisie
+							grâce à des guides touristiques qui travaillent dans l'application, avec données
+							synchronisées via Firebase.
+						</p>
+						<ul class="stack">
+							<li>Android</li>
+							<li>Java</li>
+							<li>XML</li>
+							<li>Firebase</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/APPMobile-Guide-tour" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="mobile">
+						<div class="card-top">
+							<h3>Food Delivery App</h3>
+							<span class="badge">Mobile</span>
+						</div>
+						<p>
+							Application mobile multiplateforme de livraison de repas développée en Flutter&nbsp;:
+							parcours de commande, catalogue de restaurants et panier, avec une base de code unique
+							pour Android et iOS.
+						</p>
+						<ul class="stack">
+							<li>Flutter</li>
+							<li>Dart</li>
+							<li>Android · iOS</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/Food-Delivery-Ap" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+					<article class="card" data-cat="mobile">
+						<div class="card-top">
+							<h3>CRUD SQLite Android</h3>
+							<span class="badge">Mobile</span>
+						</div>
+						<p>
+							Application Android native de démonstration d'un CRUD complet sur une base SQLite
+							embarquée&nbsp;: création, lecture, mise à jour et suppression avec persistance locale.
+						</p>
+						<ul class="stack">
+							<li>Android</li>
+							<li>Java</li>
+							<li>SQLite</li>
+						</ul>
+						<div class="card-links">
+							<a href="https://github.com/TH-montassar/crudSqllite-devMobile-" target="_blank" rel="noopener">Code source →</a>
+						</div>
+					</article>
+
+				</div>
+
+				<p class="more-repos">
+					Et une trentaine d'autres dépôts — algorithmique en C/C++, Qt, gRPC, Angular, React Native,
+					Kotlin Jetpack Compose, PHP — sur
+					<a href="https://github.com/TH-montassar?tab=repositories" target="_blank" rel="noopener">github.com/TH-montassar</a>.
+				</p>
+			</div>
+		</section>
+
+		<section class="section" id="skills">
+			<div class="wrap">
+				<div class="section-head">
+					<h2>Compétences</h2>
+					<p class="section-title">Ma boîte à outils</p>
+				</div>
+
+				<div class="skill-groups">
+					<div>
+						<h3>Langages</h3>
+						<ul class="stack">
+							<li>C</li>
+							<li>C++</li>
+							<li>Python</li>
+							<li>Java</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>Dart</li>
+							<li>SQL</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Embarqué &amp; IoT</h3>
+						<ul class="stack">
+							<li>C embarqué</li>
+							<li>ESP32</li>
+							<li>Arduino</li>
+							<li>Raspberry Pi</li>
+							<li>PlatformIO</li>
+							<li>MQTT</li>
+							<li>Firmware</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Réseaux</h3>
+						<ul class="stack">
+							<li>TCP/IP</li>
+							<li>DHCP</li>
+							<li>DNS</li>
+							<li>IPv6</li>
+							<li>QoS</li>
+							<li>Wi-Fi 802.11</li>
+							<li>EasyMesh</li>
+							<li>IEEE 1901</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Web &amp; back-end</h3>
+						<ul class="stack">
+							<li>React</li>
+							<li>Redux</li>
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>FastAPI</li>
+							<li>Flask</li>
+							<li>Spring Boot</li>
+							<li>Celery</li>
+							<li>Tailwind CSS</li>
+							<li>Vite</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Bases de données</h3>
+						<ul class="stack">
+							<li>PostgreSQL</li>
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>Redis</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Outils</h3>
+						<ul class="stack">
+							<li>Git</li>
+							<li>Jira</li>
+							<li>Docker</li>
+							<li>Linux</li>
+							<li>Wireshark</li>
+							<li>Scapy</li>
+							<li>Electron</li>
+							<li>Flutter</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Langues</h3>
+						<ul class="stack">
+							<li>Arabe — natif</li>
+							<li>Français — professionnel</li>
+							<li>Anglais — professionnel</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="experience">
+			<div class="wrap">
+				<div class="section-head">
+					<h2>Parcours</h2>
+					<p class="section-title">Expérience &amp; formation</p>
+				</div>
+
+				<ul class="timeline">
+					<li>
+						<p class="when">Sept. 2025 — Aujourd'hui</p>
+						<h3>Développeur logiciel embarqué junior</h3>
+						<p class="where">Sagemcom, Tunisie</p>
+						<p>Développement embarqué en C pour passerelles résidentielles et produits Wi-Fi EasyMesh, en équipe agile (Git, Jira).</p>
+					</li>
+					<li>
+						<p class="when">Fév. 2026 — Août 2026</p>
+						<h3>Stage PFE ingénieur — Dynamic Packet Capture</h3>
+						<p class="where">Sagemcom, Tunisie</p>
+						<p>Conception et réalisation d'une plateforme de diagnostic réseau assistée par l'IA.</p>
+					</li>
+					<li>
+						<p class="when">2022 — 2026</p>
+						<h3>Diplôme d'ingénieur — Génie informatique</h3>
+						<p class="where">Université Sesame</p>
+						<p>Spécialité systèmes embarqués, en alternance avec Sagemcom.</p>
+					</li>
+					<li>
+						<p class="when">Avr. 2024 — Août 2025</p>
+						<h3>Technicien de test</h3>
+						<p class="where">Sagemcom, Tunisie</p>
+						<p>Tests fonctionnels et réseau des passerelles et répéteurs, reproduction de bugs et analyse de captures.</p>
+					</li>
+					<li>
+						<p class="when">Juil. 2022 — Mars 2024</p>
+						<h3>Développeur logiciel</h3>
+						<p class="where">Sagemcom, Tunisie</p>
+						<p>Développement embarqué et maintenance au sein de l'équipe R&amp;D, en parallèle des études d'ingénieur.</p>
+					</li>
+					<li>
+						<p class="when">Fév. 2022 — Mai 2022</p>
+						<h3>Stage de fin d'études — Licence</h3>
+						<p class="where">Joodlab, Sousse (à distance)</p>
+						<p>Développement de Dukkan, une marketplace e-commerce multi-vendeurs (MERN).</p>
+					</li>
+					<li>
+						<p class="when">2019 — 2022</p>
+						<h3>Licence appliquée — Technologies de l'informatique</h3>
+						<p class="where">ISET Jendouba</p>
+						<p>Spécialité développement des systèmes d'information.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<div class="wrap">
+				<div class="section-head">
+					<h2>Contact</h2>
+					<p class="section-title">Parlons de votre projet</p>
+					<p class="section-intro">
+						Ouvert aux opportunités en développement embarqué, réseaux et full-stack. N'hésitez pas
+						à me contacter par e-mail ou sur LinkedIn.
+					</p>
+				</div>
+
+				<div class="contact-grid">
+					<div class="contact-card">
+						<span>E-mail</span>
+						<a href="mailto:montassar.themri@gmail.com">montassar.themri@gmail.com</a>
+					</div>
+					<div class="contact-card">
+						<span>Téléphone</span>
+						<a href="tel:+21626236286">+216 26 236 286</a>
+					</div>
+					<div class="contact-card">
+						<span>LinkedIn</span>
+						<a href="https://www.linkedin.com/in/themri-montassar-160042149/" target="_blank" rel="noopener">themri-montassar</a>
+					</div>
+					<div class="contact-card">
+						<span>GitHub</span>
+						<a href="https://github.com/TH-montassar" target="_blank" rel="noopener">TH-montassar</a>
+					</div>
+					<div class="contact-card">
+						<span>Localisation</span>
+						<p>Bizerte, Tunisie</p>
+					</div>
+					<div class="contact-card">
+						<span>CV</span>
+						<a href="Montassar_Themri_CV.pdf" download>Version française (PDF)</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="wrap">
+			<p>© 2026 Montassar Themri · <a href="index.html">CV</a> · <a href="en.html">English CV</a></p>
+		</div>
+	</footer>
+
+	<script>
+		(function () {
+			var buttons = document.querySelectorAll(".filter");
+			var cards = document.querySelectorAll(".projects .card");
+
+			buttons.forEach(function (btn) {
+				btn.addEventListener("click", function () {
+					var want = btn.dataset.filter;
+
+					buttons.forEach(function (b) {
+						b.classList.toggle("is-active", b === btn);
+					});
+
+					cards.forEach(function (card) {
+						card.hidden = want !== "all" && card.dataset.cat !== want;
+					});
+				});
+			});
+		})();
+	</script>
+
+</body>
+
+</html>

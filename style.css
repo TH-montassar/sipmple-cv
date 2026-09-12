@@ -181,7 +181,10 @@ p {
   right: 16px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 8px;
+  max-width: calc(100% - 32px);
 }
 
 .lang-link {
